@@ -182,7 +182,7 @@ div.gallery {
 }
 /*contact end*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .menu nav{
         display: block;   
         margin-left: 100px;
