@@ -3,9 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homeStyle.css">
+    <!-- <link rel="stylesheet" href="homeStyle.css"> -->
     <title class="tittle">Event Amplifiers</title>
 </head>
+<style>
+  /* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  /*padding-top: 60px;remove this line for non relative nav*/
+}
+
+/* Style the header */
+
+
+header.menu nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header.menu nav .logo img {
+  height: 150px;
+  width: auto;
+}
+
+header.menu nav ul {
+  display: flex;
+  list-style-type: none;
+  
+}
+
+header.menu nav ul li {
+  margin-right: 40px;
+  font-size: 25px;
+}
+
+header.menu nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  
+}
+header.menu nav ul li a:hover {
+  background-color: rgb(196, 53, 196);
+  color: white;
+  border-radius: 5px;
+}
+
+/* Style the hero section */
+.hero {
+  /*margin-top: 70px;remove this line for non relative nav*/
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero button.contact {
+  padding: 10px 20px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1px;
+  background-color: white;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Style the about section */
+.about {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+/* Style the gallery section */
+/*.gallery_sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.gallery {
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 20px;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .desc {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none; 
+  margin-bottom: 10px; 
+}
+*/
+.gallery_sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.gallery {
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 20px;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .desc {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.gallery .desc:hover {
+  background-color: rgb(196, 53, 196);
+  color: white;
+  border-radius: 5px;
+}
+
+
+/* Style the contact section */
+.contact_info {
+  
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact_info h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact_info .description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.contact_info button.contact {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 1px;
+  background-color: white;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    width: 45%; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+  }
+
+  .gallery img {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .gallery .desc {
+    font-size: 14px;
+    padding: 5px; 
+  }
+}
+
+
+</style>
 <body>
     <header class="menu">
         <nav>
@@ -29,79 +248,116 @@
             <div class="hero-text">
                 <h1>Welcome to Event Amplifiers</h1>
                 <p>We make your events unforgettable!</p>
-                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=danielhpyt@gmail.com" target="_blank"><button class="contact" href="#contact_info">Contact Us</button></a>
-            </div>
+                <a href="#contact_info" target="_blank"><button class="contact" href="#contact_info">Contact Us</button></a>
+                <!-- href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=danielhpyt@gmail.com" -->
+              </div>
         </div>
     </section>
     
     
     <section id="about" class="about">
-        <H1>Stock</H1>
+        <H1>Stock</H1> 
     </section>
     
 
     <section class="gallery_sec">
         <div class="gallery">
-            <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Blue_360x.webp">
+            <!-- <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Blue_360x.webp"> -->
               <img src="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Blue_360x.webp" alt="Cinque Terre" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+            <!-- <div class="desc">Need prices</div> -->
           </div>
           
           <div class="gallery">
-            <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Green_360x.webp">
+            <!-- <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Green_360x.webp"> -->
               <img src="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Green_360x.webp" alt="Forest" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+            
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
           
           <div class="gallery">
-            <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Red_360x.webp">
+            <!-- <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Red_360x.webp"> -->
               <img src="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Red_360x.webp" alt="Northern Lights" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
           
           <div class="gallery">
-            <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Yellow_360x.webp">
+            <!-- <a target="_blank" href="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Yellow_360x.webp"> -->
               <img src="images/Solid-Color-Air-Dancers-Inflatable-Tube-Man-Cover-Yellow_360x.webp" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
 
           <div class="gallery">
-            <a target="_blank" href="images\purple.webp">
+            <!-- <a target="_blank" href="images\purple.webp"> -->
               <img src="images\purple.webp" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
 
           <div class="gallery">
-            <a target="_blank" href="images\car wash.webp">
+            <!-- <a target="_blank" href="images\car wash.webp"> -->
               <img src="images\car wash.webp" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+            
+            <!-- <div class="desc">Need prices</div> -->
           </div>
 
           <div class="gallery">
-            <a target="_blank" href="images\grand opening2.jpg">
+            <!-- <a target="_blank" href="images\grand opening2.jpg"> -->
               <img src="images\grand opening2.jpg" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
 
           <div class="gallery">
-            <a target="_blank" href="images\open house.jpg">
+            <!-- <a target="_blank" href="images\open house.jpg"> -->
               <img src="images\open house.jpg" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
 
           <div class="gallery">
-            <a target="_blank" href="images\sale2.png">
+            <!-- <a target="_blank" href="images\sale2.png"> -->
               <img src="images\sale2.png" alt="Mountains" width="800" height="500">
-            </a>
-            <div class="desc">Need prices</div>
+            <!-- </a> -->
+            <div class="desc">
+              <a href="#contact_info" class="desc">Need prices</a>
+            </div>
+
+            <!-- <div class="desc">Need prices</div> -->
           </div>
     </section>
 
@@ -109,7 +365,7 @@
         <H1>Contact</H1>
         <div class="contact-content">
             <p class="description">Click the button bellow to contact us! Remember to add the date of the event, type of air dancers, and the best way to contact you!<br>
-                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=danielhpyt@gmail.com" target="_blank"><button class="contact" href="#contact_info">Contact Us</button></a>
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=eventamplifiers@gmail.com" target="_blank"><button class="contact" href="#contact_info">Contact Us</button></a>
             </p>
 
             <img src="images\Sweet_Corn-removebg-preview.png" alt="">
